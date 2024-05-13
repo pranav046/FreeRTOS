@@ -75,12 +75,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\Source\include;..\..\Source\portable\MSVC-MingW;..\Common\Include;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS\include;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\include;.\Trace_Recorder_Configuration;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\VS\FreeRTOS\FreeRTOS\Demo\Common\include;D:\VS\FreeRTOS\FreeRTOS\Source\portable\MSVC-MingW;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\kernelports\FreeRTOS\include;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\include;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace;D:\VS\FreeRTOS\FreeRTOS\Source\include;..\Source\include;..\Source\portable\MSVC-MingW;Common\Include;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS\include;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\include;.\Trace_Recorder_Configuration;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS\trcKernelPort.c" />
-    <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\trcSnapshotRecorder.c" />
+    <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\kernelports\FreeRTOS\trcKernelPort.c" />
+    <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\trcSnapshotRecorder.c" />
     <ClCompile Include="..\..\Source\croutine.c" />
     <ClCompile Include="..\..\Source\event_groups.c" />
     <ClCompile Include="..\..\Source\portable\MemMang\heap_5.c" />
