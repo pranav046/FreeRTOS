@@ -80,6 +80,7 @@
  * demo application will be built.  The comprehensive test and demo application is
  * implemented and described in main_full.c. */
 #define mainCREATE_SIMPLE_BLINKY_DEMO_ONLY    0
+#define mainCREATE_PRANAV46_MAIN              1
 
 /* This demo uses heap_5.c, and these constants define the sizes of the regions
  * that make up the total heap.  heap_5 is only used for test and example purposes
@@ -106,6 +107,7 @@
  */
 extern void main_blinky( void );
 extern void main_full( void );
+extern void main_pranav46(void);
 
 /*
  * Only the comprehensive demo uses application hook (callback) functions.  See
@@ -228,6 +230,11 @@ int main( void )
         printf( "\nStarting the blinky demo.\r\n" );
         main_blinky();
     }
+    #elif (mainCREATE_PRANAV46_MAIN == 1)
+    {
+        printf("\nStarting the My demo.\r\n");
+        main_pranav46();
+    }
     #else
     {
         printf( "\nStarting the full demo.\r\n" );
@@ -269,7 +276,7 @@ void vApplicationIdleHook( void )
      * because it is the responsibility of the idle task to clean up memory
      * allocated by the kernel to any task that has since deleted itself. */
 
-    #if ( mainCREATE_SIMPLE_BLINKY_DEMO_ONLY != 1 )
+    #if ( (mainCREATE_SIMPLE_BLINKY_DEMO_ONLY != 1)  || (mainCREATE_PRANAV46_MAIN != 1))
     {
         /* Call the idle task processing used by the full demo.  The simple
          * blinky demo does not use the idle task hook. */
@@ -303,7 +310,7 @@ void vApplicationTickHook( void )
     * code must not attempt to block, and only the interrupt safe FreeRTOS API
     * functions can be used (those that end in FromISR()). */
 
-    #if ( mainCREATE_SIMPLE_BLINKY_DEMO_ONLY != 1 )
+    #if ( (mainCREATE_SIMPLE_BLINKY_DEMO_ONLY != 1)  || (mainCREATE_PRANAV46_MAIN != 1))
     {
         vFullDemoTickHookFunction();
     }
@@ -491,7 +498,7 @@ static uint32_t prvKeyboardInterruptHandler( void )
             break;
 
         default:
-            #if ( mainCREATE_SIMPLE_BLINKY_DEMO_ONLY == 1 )
+            #if ( (mainCREATE_SIMPLE_BLINKY_DEMO_ONLY == 1)  || (mainCREATE_PRANAV46_MAIN == 1))
                 /* Call the keyboard interrupt handler for the blinky demo. */
                 vBlinkyKeyboardInterruptHandler( xKeyPressed );
             #endif

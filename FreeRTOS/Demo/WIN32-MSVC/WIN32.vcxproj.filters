@@ -41,6 +41,12 @@
     <Filter Include="Demo App Source\FreeRTOS+Trace Recorder\include">
       <UniqueIdentifier>{5cb8735d-498f-40aa-bf5c-9d41923b7968}</UniqueIdentifier>
     </Filter>
+    <Filter Include="pranav46">
+      <UniqueIdentifier>{94ed250f-85aa-4361-8c1b-c1a678e6b116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pranav46\main">
+      <UniqueIdentifier>{db77c1c5-2461-4625-a952-8d1c1462f829}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -142,12 +148,6 @@
     <ClCompile Include="..\Common\Minimal\AbortDelay.c">
       <Filter>Demo App Source\Full_Demo\Common Demo Tasks</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS\trcKernelPort.c">
-      <Filter>Demo App Source\FreeRTOS+Trace Recorder</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\trcSnapshotRecorder.c">
-      <Filter>Demo App Source\FreeRTOS+Trace Recorder</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\stream_buffer.c">
       <Filter>FreeRTOS Source\Source</Filter>
     </ClCompile>
@@ -165,6 +165,15 @@
     </ClCompile>
     <ClCompile Include="..\Common\Minimal\TaskNotifyArray.c">
       <Filter>Demo App Source\Full_Demo\Common Demo Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\kernelports\FreeRTOS\trcKernelPort.c">
+      <Filter>Demo App Source\FreeRTOS+Trace Recorder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\trcSnapshotRecorder.c">
+      <Filter>Demo App Source\FreeRTOS+Trace Recorder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\pranav46\pranav46_main\pranav46_main.c">
+      <Filter>pranav46\main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -227,6 +236,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\Include\trcKernelPort.h">
       <Filter>Configuration Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\pranav46\pranav46_main\pranav46_main.h">
+      <Filter>pranav46\main</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -75,10 +75,11 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\VS\FreeRTOS\FreeRTOS\Demo\Common\include;D:\VS\FreeRTOS\FreeRTOS\Source\portable\MSVC-MingW;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\kernelports\FreeRTOS\include;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\include;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace;D:\VS\FreeRTOS\FreeRTOS\Source\include;..\Source\include;..\Source\portable\MSVC-MingW;Common\Include;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS\include;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\include;.\Trace_Recorder_Configuration;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\VS\pranav46\pranav46_main;D:\VS\FreeRTOS\FreeRTOS\Demo\Common\include;D:\VS\FreeRTOS\FreeRTOS\Source\portable\MSVC-MingW;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\kernelports\FreeRTOS\include;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\include;D:\VS\FreeRTOS\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace;D:\VS\FreeRTOS\FreeRTOS\Source\include;..\Source\include;..\Source\portable\MSVC-MingW;Common\Include;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\kernelports\FreeRTOS\include;..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\include;.\Trace_Recorder_Configuration;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\pranav46\pranav46_main\pranav46_main.c" />
     <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\kernelports\FreeRTOS\trcKernelPort.c" />
     <ClCompile Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\TraceRecorderSource\trcSnapshotRecorder.c" />
     <ClCompile Include="..\..\Source\croutine.c" />
@@ -137,6 +138,7 @@
     <ClCompile Include="Run-time-stats-utils.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\pranav46\pranav46_main\pranav46_main.h" />
     <ClInclude Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\Include\trcKernelPort.h" />
     <ClInclude Include="..\..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-Trace\Include\trcRecorder.h" />
     <ClInclude Include="..\..\Source\include\event_groups.h" />
